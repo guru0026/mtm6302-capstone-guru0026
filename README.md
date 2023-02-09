@@ -30,3 +30,5 @@ Below the main image section, there is a gallery of some other images in case th
 The header highlights the active page inside a yellow box, while the links for all other pages are in grey. A search bar helps the user navigate the site if required.
 
 The footer has links to policy related documents as well as social media accounts.
+
+The fonts used were Audiowide for the headers because of how it complements the existing NASA "worm" font, and Jura for the body text because of how it complements Audiowide and is also legible.
