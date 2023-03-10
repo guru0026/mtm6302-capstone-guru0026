@@ -8,14 +8,35 @@
 }
 
 
+body {
+    background-color: var(--prim);
+}
+
+
 .navbar {
-    background-image: linear-gradient(to right, #003E97, black);
+    background-image: linear-gradient(to right, var(--quat), var(--prim));
+}
+
+
+footer {
+    background-image: linear-gradient(to left, var(--quat), var(--prim));
 }
 
 
 .nav-link {
     font-family: 'Audiowide', sans-serif;
-    color: var(--tert) !important;
+    color: var(--tert);
     text-decoration: underline;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
+
+
+.navbar .active {
+    background-color: var(--sec);
+    color: var(--quat) !important;
+    /* margin-top: .7rem; */
+    /* padding: 3rem 0.3rem; */
+    /* font-weight: 700; */
+    border-radius: 2rem;
+}
+
