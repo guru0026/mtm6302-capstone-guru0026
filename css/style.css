@@ -1,0 +1,21 @@
+:root {
+    font-family: 'Jura', sans-serif !important;
+    --prim: #000000;
+    --sec: #FFBE00;
+    --tert: #BEBEC3;
+    --quat: #003E97;
+    --quin: rgba(190, 190, 195, 0.25);
+}
+
+
+.navbar {
+    background-image: linear-gradient(to right, #003E97, black);
+}
+
+
+.nav-link {
+    font-family: 'Audiowide', sans-serif;
+    color: var(--tert) !important;
+    text-decoration: underline;
+    font-weight: 400 !important;
+}
