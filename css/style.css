@@ -1,5 +1,4 @@
 :root {
-    font-family: 'Jura', sans-serif !important;
     --prim: #000000;
     --sec: #FFBE00;
     --tert: #BEBEC3;
@@ -12,6 +11,31 @@ body {
     background-color: var(--prim);
 }
 
+p, a {
+    font-family: 'Jura', sans-serif !important;
+    color: var(--tert) !important;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', sans-serif;
+    color: var(--tert);
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer ul, footer p {
+    font-size: 1rem;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+section {
+    margin: 5rem;
+}
 
 .navbar {
     background-image: linear-gradient(to right, var(--quat), var(--prim));
@@ -38,5 +62,61 @@ footer {
     /* padding: 3rem 0.3rem; */
     /* font-weight: 700; */
     border-radius: 2rem;
+}
+
+/* ===============================================CAROUSEL SECTION======================================================= */
+
+#carslide1 {
+    content: url(../images/photos/iss066e023536.jpg);
+}
+
+#carslide2 {
+    content: url(../images/photos/nasa-7Cz6bWjdlDs-unsplash.jpg);
+}
+
+#carslide3 {
+    content: url(../images/photos/nasa-8Hjx3GNZYeA-unsplash.jpg);
+}
+
+#carslide4 {
+    content: url(../images/photos/nasa-CpHNKNRwXps-unsplash.jpg);
+}
+
+#carslide5 {
+    content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
+}
+
+
+/* =================================================CAROUSEL-END========================================================= */
+
+#space-walk {
+    content: url(../images/photos/nasa-gYwfpVI2JzM-unsplash.jpg);
+}
+
+.card {
+    margin: .3rem;
+    border-width: .1rem;
+    border-radius: 1rem;
+    border-color: var(--tert);
+}
+
+#astronaut {
+    content: url(../images/photos/nasa-OLlj17tUZnU-unsplash.jpg);
+}
+
+#sun {
+    content: url(../images/photos/nasa-JHyiw_dpALk-unsplash.jpg);
+}
+
+#iss {
+    content: url(../images/photos/nasa-CpHNKNRwXps-unsplash.jpg);
+}
+
+#crater {
+    content: url(../images/photos/nasa-jlV2k_Fx0fc-unsplash.jpg);
+}
+
+#nebula {
+    content: url(../images/photos/nasa-rTZW4f02zY8-unsplash.jpg);
 }
 
