@@ -141,6 +141,7 @@ main i, section i {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    margin-bottom: -2rem;
 }
 
 .slider {
@@ -198,6 +199,13 @@ margin-top: -12px;
     content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
 }
 
+.carousel-item p  {
+    color: yellow !important;
+    font-size: 3rem !important;
+    z-index: 9 !important;
+    margin-bottom: 10rem !important;
+}
+
 /* =================================================CAROUSEL-END========================================================= */
 
 #space-walk {
@@ -247,25 +255,81 @@ margin-top: -12px;
     align-content: center;
 }
 
-#astronaut {
+#a {
     content: url(../images/photos/nasa-OLlj17tUZnU-unsplash.jpg);
 }
 
-#sun {
+#b {
     content: url(../images/photos/nasa-JHyiw_dpALk-unsplash.jpg);
 }
 
-#iss {
+#c {
     content: url(../images/photos/nasa-CpHNKNRwXps-unsplash.jpg);
 }
 
-#crater {
+#d {
     content: url(../images/photos/nasa-jlV2k_Fx0fc-unsplash.jpg);
 }
 
-#nebula {
+#e {
     content: url(../images/photos/nasa-rTZW4f02zY8-unsplash.jpg);
 }
+
+#f {
+    content: url(../images/photos/eric-tompkins-JsWBc--sf2o-unsplash.jpg);
+}
+
+#g {
+    content: url(../images/photos/nasa-7Cz6bWjdlDs-unsplash.jpg);
+}
+
+#h {
+    content: url(../images/photos/nasa-8Hjx3GNZYeA-unsplash.jpg);
+}
+
+#i {
+    content: url(../images/photos/nasa-cIX5TlQ_FgM-unsplash.jpg);
+}
+
+#j {
+    content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
+}
+
+#k {
+    content: url(../images/photos/nasa-NuE8Nu3otjo-unsplash.jpg);
+}
+
+#l {
+    content: url(../images/photos/nasa-Q1p7bh3SHj8-unsplash.jpg);
+}
+
+#m {
+    content: url(../images/photos/nasa-UPyf9vu0FiI-unsplash.jpg);
+}
+
+#n {
+    content: url(../images/photos/nasa-V4ZksNimxLk-unsplash.jpg);
+}
+
+#o {
+    content: url(../images/photos/nasa-wAkLQnT2TC0-unsplash.jpg);
+}
+
+#p {
+    content: url(../images/photos/nasa-xFO2Xt33xgI-unsplash.jpg);
+}
+
+#q{
+    content: url(../images/photos/nasa-Yj1M5riCKk4-unsplash-2.jpg);
+}
+
+#r{
+    content: url(../images/photos/nasa-Zzc0vZE2JZI-unsplash.jpg);
+}
+
+
+
+
 
 
 @media (max-width: 480px) {
