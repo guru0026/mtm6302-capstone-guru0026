@@ -63,8 +63,31 @@ footer {
     /* font-weight: 700; */
     border-radius: 2rem;
 }
+/* ======================================================CALENDAR=================================================================================== */
+
+.selector .card {
+    margin: .3rem;
+    border-width: .1rem;
+    border-radius: .5rem;
+    border-color: var(--quat);
+    background-color: var(--prim);
+    aspect-ratio: 1/1;
+    /* justify-content: center;
+    align-content: center;  */
+}
+
+/* ====================================================CALENDAR-END================================================================================= */
 
 /* ===============================================CAROUSEL SECTION======================================================= */
+
+.carousel-inner {
+    aspect-ratio: 3/1;
+    margin: auto;
+}
+
+.carousel-inner a {
+    margin: auto;
+}
 
 #carslide1 {
     content: url(../images/photos/iss066e023536.jpg);
@@ -86,7 +109,6 @@ footer {
     content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
 }
 
-
 /* =================================================CAROUSEL-END========================================================= */
 
 #space-walk {
@@ -98,6 +120,17 @@ footer {
     border-width: .1rem;
     border-radius: 1rem;
     border-color: var(--tert);
+    justify-content: center;
+    align-content: center;
+}
+
+.thumb {
+    aspect-ratio: 1/1;
+}
+
+.card div {
+    border-radius: .9rem;
+    align-content: center;
 }
 
 #astronaut {
