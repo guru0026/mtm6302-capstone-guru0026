@@ -39,11 +39,13 @@ section {
 
 .navbar {
     background-image: linear-gradient(to right, var(--quat), var(--prim));
+    border-bottom: 0.1rem solid var(--tert);
 }
 
 
 footer {
     background-image: linear-gradient(to left, var(--quat), var(--prim));
+    border-top: 0.1rem solid var(--tert);
 }
 
 
@@ -51,7 +53,7 @@ footer {
     font-family: 'Audiowide', sans-serif;
     color: var(--tert);
     text-decoration: underline;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 
@@ -60,15 +62,21 @@ footer {
     color: var(--quat) !important;
     /* margin-top: .7rem; */
     /* padding: 3rem 0.3rem; */
-    /* font-weight: 700; */
+    font-weight: 700;
     border-radius: 2rem;
 }
+
+.fa-bars {
+    font-size: 2.5rem;
+    color: var(--tert);
+}
+
 /* ======================================================CALENDAR=================================================================================== */
 
 .selector .card {
     margin: .3rem;
     border-width: .1rem;
-    border-radius: .5rem;
+    border-radius: .7rem;
     border-color: var(--quat);
     background-color: var(--prim);
     aspect-ratio: 1/1;
@@ -76,13 +84,66 @@ footer {
     align-content: center;  */
 }
 
+.selector .card p {
+    color: var(--sec) !important;
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+
+.selector i {
+    color: var(--sec) !important;
+    font-size: 2rem;
+    /* margin: 0px 0px; */
+}
+
+
+.selector {
+    text-align: center;
+
+}
+
+.container .calendar {
+    margin: -4rem 0rem -4rem 0rem;
+}
 /* ====================================================CALENDAR-END================================================================================= */
+
+.range {
+    display: inline-flex;
+    color: var(--sec);
+    font-family: 'Jura', sans-serif !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    justify-content: space-evenly;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.15rem;
+    background: var(--quat);
+}
+
+input[type=range] {
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+border: 3px solid var(--sec);
+height: 1.5rem;
+width: 1.5rem;
+border-radius: 1rem;
+background: var(--prim);
+margin-top: -12px;
+}
 
 /* ===============================================CAROUSEL SECTION======================================================= */
 
 .carousel-inner {
-    aspect-ratio: 3/1;
+    aspect-ratio: 5/2;
     margin: auto;
+    vertical-align: middle;
 }
 
 .carousel-inner a {
@@ -124,8 +185,18 @@ footer {
     align-content: center;
 }
 
-.thumb {
+.main-text {
+    background-color: var(--prim);
+    border-color: var(--prim);
+}
+
+.card-text {
+    text-decoration: none !important;
+}
+
+div .thumb {
     aspect-ratio: 1/1;
+    
 }
 
 .card div {
@@ -153,3 +224,20 @@ footer {
     content: url(../images/photos/nasa-rTZW4f02zY8-unsplash.jpg);
 }
 
+
+@media (max-width: 480px) {
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+        padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:0;
+    }
+  }
