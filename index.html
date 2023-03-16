@@ -20,10 +20,13 @@
     
     <header>
         <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
+            <div class="container-fluid justify-content-evenly">
                 <a href="index.html" class="navbar-brand">
                     <img src="images/nasa_worm.png" alt="nav-logo links to homepage">
                 </a>
+                <form>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -43,6 +46,7 @@
                         </li>
                     </ul>
                 </div>
+            
             </div>
         </nav>
     </header>
@@ -210,11 +214,30 @@
                 </div>
 
                 <div class="summary col-lg-4 col-md-12 col-sm-12 col-12">
-                    <a href="#">
-                        <div class="card main-text">
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, quae. Possimus illum illo sapiente quisquam nisi nulla error, autem pariatur quasi tempore eligendi sunt atque cupiditate! Nam fugiat tenetur magni.</p>
+                    <div class="card main-text">
+                        <div class="row">
+                            <p class="card-text">This photo of Astronaut ABC doing
+                                a routine service of the
+                                International Space Station (ISS)
+                                was taken from the Blank-wing’s
+                                Blank Camera.</p>
+                                <br>
                         </div>
-                    </a>
+                        <div class="row caption-links justify-content-end">
+                            <div class="col-lg-12 col-md-4 col-12">
+                                <a href="#">Read full article here</a>
+                            </div>
+                            <div class="col-lg-12 col-md-4 offset-md-4 col-12">
+                                <i class="fa-solid fa-download"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <br>
+                        
+                    </div>
                 </div>
 
             </div>
@@ -345,7 +368,7 @@
 
 
     <footer>
-        <div class="container-fluid">
+        <div class="container">
 
 
             <div class="row g-0 justify-content-between">
@@ -353,37 +376,37 @@
                 <div class="col">
                     <div class="row"></div>
 
-                        <div class="col-lg-3 col-12">
-                            <ul class="row g-0 d-flex justify-content-between">
-                                <li class="col-sm-3 col-6 footer-link">
+                        <div class="col-lg-5 col-12">
+                            <ul class="row g-0 d-flex justify-content-evenly">
+                                <li class="col-sm-2 col-6 footer-link">
                                     <a href="#">Privacy Policy</a>
                                 </li>
-                                <li class="col-sm-3 col-6 footer-link">
+                                <li class="col-sm-2  col-6 footer-link">
                                     <a href="#">Terms of Service</a>
                                 </li>
-                                <li class="col-sm-3 col-6 footer-link">
+                                <li class="col-sm-2 col-6 footer-link">
                                     <a href="#">License</a>
                                 </li>
-                                <li class="col-sm-3 col-6 footer-link">
+                                <li class="col-sm-2 col-6 footer-link">
                                     <a href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
 
 
-                        <!-- <div class="col-lg-3 offset-5 col-12">
-                            <ul class="row g-0 d-flex justify-content-between">
-                                <li class="col-4 insta">
+                        <div class="col-12">
+                            <ul class="row g-0 d-flex justify-content-end">
+                                <li class="col-1 insta">
                                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                                 </li>
-                                <li class="col-4 linkedin">
+                                <li class="col-1 linkedin">
                                     <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
                                 </li>
-                                <li class="col-4 github">
+                                <li class="col-1 github">
                                     <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                                 </li>
                             </ul>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
