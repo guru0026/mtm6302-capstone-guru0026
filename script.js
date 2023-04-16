@@ -8,7 +8,7 @@ const favorites = [];
 function fetchImageData(event) {
     event.preventDefault();
     const date = document.querySelector('#date').value;
-    const url = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`;
+    const url = `https://api.nasa.gov/planetary/apod?api_key=${APIKey}&date=${date}`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
