@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <title>NASA Capstone - Home</title>
+    <title>test-capstone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,18 +14,16 @@
     <script src="https://kit.fontawesome.com/16c6523511.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    
-    <header>
-        <nav class="navbar navbar-expand-sm">
+
+    <nav class="navbar navbar-expand-sm">
             <div class="container-fluid justify-content-evenly">
                 <a href="index.html" class="navbar-brand">
                     <img src="images/nasa_worm.png" alt="nav-logo links to homepage">
                 </a>
-                <form>
+                <!-- <form>
                     <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                </form>
+                </form> -->
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -35,502 +32,138 @@
                         <li class="nav-item">
                             <a href="index.html" class="nav-link active">home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="gallery.html" class="nav-link">gallery</a>
+                        <li class="nav-item">
+                            <a href="#heart-zone" class="nav-link">favourites</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">about</a>
+                            <a href="#random-zone" class="nav-link">gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact-link" class="nav-link">contact</a>
+                            <a href="#about" class="nav-link">about</a>
                         </li>
                     </ul>
                 </div>
             
             </div>
         </nav>
-    </header>
 
-    <main>
-        
-        <div class="car container-fluid">
-            <div class="row g-0">
-                <div class="col">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <a href="#">
-                                <div id="carslide1" class="carousel-item active">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <p>Latest images from the James Webb Space Telescope</p>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            <a href="#">
-                                <div id="carslide2" class="carousel-item">
-                                    <div class="d-flex align-self-center"></div>
-                                </div>
-                            </a>
-                            
-                            <a href="#">
-                                <div id="carslide3" class="carousel-item">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <p>Latest images from the James Webb Space Telescope</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#">
-                                <div id="carslide4" class="carousel-item">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <p>Latest images from the James Webb Space Telescope</p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#">
-                                <div id="carslide5" class="carousel-item">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <p>Latest images from the James Webb Space Telescope</p>
-                                    </div>
-                                </div>
-                            </a>
-                                   
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 w-100 banner">
+                <img src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="" class="w-100">
             </div>
         </div>
+    </div>
+    
+    <br>
 
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Astronomy Picture of the Day</h1>
+                <div class="w-100 card" id="image-container">
+                    <img src="https://images.unsplash.com/photo-1614314007212-0257d6e2f7d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                    <div class="card-body">
+                        <h3>Welcome!</h3>
+                        <p>Select a date and press submit to get an <strong><em>Astronomy Picture of The Day</em></strong> from NASA's online database </p>
+                    </div>
+                    
+                </div>
+                <br>
+                <form id="calendar" >
+                    <button type="button" id="heart">
+                        <i class="fa-regular fa-heart justify-content-center"></i>
+                    </button>
+                    <br>
+                    <label for="date">Enter date:</label>
+                    <br>
+                    <input class="w-100" type="date" id="date" name="date">
+                    <br>
+                    <button type="submit" id="submit">Submit</button>
+                    
+                    
+                </form>
+
+                <br>
+
+            </div>
+        </div>
     </main>
 
-    <section>
-        <div class="container">
+    <hr>
+
+    <section id="heart-zone" class="container">
+        <div class="row">
+                <div id="hearts-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="random-zone" class="container">
+        <div class="row">
+                <h1>More Images</h1>
+                <div id="randoms-container"></div>
+        </div>
+    </section>
+
+    <footer id="about" class="container-fluid">
+
+        <div class="row g-0 justify-content-between">
             
+            <div class="col">
+                <div class="row"></div>
 
-            <div class="calendar row g-0">
-
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>1</p>
+                    <div class="col-lg-5 col-12">
+                        <ul class="row g-0 d-flex justify-content-center">
+                            <li class="col-sm-2 col-6 footer-link">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="col-sm-2  col-6 footer-link">
+                                <a href="#">Terms of Service</a>
+                            </li>
+                            <li class="col-sm-2 col-6 footer-link">
+                                <a href="#">License</a>
+                            </li>
+                            <li class="col-sm-2 col-6 footer-link">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
 
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>9</p>
+
+                    <div class="col-lg-5 offset-lg-7 col-12">
+                        <ul class="row g-0 d-flex justify-content-center">
+                            <li class="col-2 insta">
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                            <li class="col-2 linkedin">
+                                <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                            </li>
+                            <li class="col-2 github">
+                                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
 
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>9</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>3</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="selector col-md-1 offset-md-2 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>0</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>2</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="selector col-md-1 offset-md-2 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>2</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-                <div class="selector col-md-1 col-3">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <div class="card">
-                        <p>7</p>
-                    </div>
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-
-        <div class="container">
-            <div class="row slider">
-                <div class="col-12 range">
-                    <label for="calendar" class="pull-left">06 16 1995</label>
-                    <input type="range" class="form-range" id="customRange1">
-                    <label for="calendar" class="pull-right">today</label>
                 </div>
             </div>
         </div>
 
-        
-    </section>
+        <div class="row g-0 justify-content-end"></div>
 
-    <section>
-
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div>
-                        <form>
-                            <label for="date">Enter date:</label>
-                            <input type="date" id="date" name="date">
-                            <button type="submit" id="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div id="image-container"></div>
-                    <button type="button" id="save">Save as Favorite</button>
-                    <div id="favorites-container"></div>
+            <div class="col-lg-5 offset-lg-7 col-12">
+                <div class="d-flex justify-content-center footzone copyright">
+                    <!-- <img src="images/NASA-Logo-Med.png" alt="nav-logo links to homepage"> -->
+                    <p>&copy National Aeronautics and Space Administration 2023</p>
                 </div>
             </div>
-        </div>
-        
 
-    </section>
+        </div> 
 
-
-    <section>
-
-        <div class="container">     
-            <div class="row g-0">
-                <h2>Mechanic in the Sky</h2>
-
-                <div class="summary col-lg-8 col-md-12 col-sm-12 col-12">
-                    <a href="#">
-                        <div class="card card-main">
-                            <div id="space-walk" class="card-img-top"></div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="card main-text">
-                        <div class="row">
-                            <p class="card-text">This photo of Astronaut ABC doing
-                                a routine service of the
-                                International Space Station (ISS)
-                                was taken from the Blank-wing’s
-                                Blank Camera.</p>
-                                <br>
-                        </div>
-                        <div class="row caption-links justify-content-end">
-                            <div class="col-lg-12 col-md-4 col-12">
-                                <a href="#">Read full article here</a>
-                            </div>
-                            <div class="col-lg-12 col-md-4 offset-md-4 col-12">
-                                <i class="fa-solid fa-download"></i>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-share-from-square"></i>
-                            </div>
-                        </div>
-                        <br>
-                        
-                        <br>
-                        
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-
-        <div class="container">     
-            <div class="row g-0">
-                <h2>More Photos</h2>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="a"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="b" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="c" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="d" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="e" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="f" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="g" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="h" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="i" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="j" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="k" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="l" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="m" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="n" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="o" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="p" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="q" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="summary col-lg-2 col-md-3 col-sm-6 col-12">
-                    <a href="#">
-                        <div class="card thumb">
-                            <div id="r" class="card-img-top"></div>
-
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <footer>
-        <div class="container-fluid">
-
-
-            <div class="row g-0 justify-content-between">
-                
-                <div class="col">
-                    <div class="row"></div>
-
-                        <div class="col-lg-5 col-12">
-                            <ul class="row g-0 d-flex justify-content-center">
-                                <li class="col-sm-2 col-6 footer-link">
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li class="col-sm-2  col-6 footer-link">
-                                    <a href="#">Terms of Service</a>
-                                </li>
-                                <li class="col-sm-2 col-6 footer-link">
-                                    <a href="#">License</a>
-                                </li>
-                                <li class="col-sm-2 col-6 footer-link">
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="col-lg-5 offset-lg-7 col-12">
-                            <ul class="row g-0 d-flex justify-content-center">
-                                <li class="col-2 insta">
-                                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                                </li>
-                                <li class="col-2 linkedin">
-                                    <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
-                                </li>
-                                <li class="col-2 github">
-                                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row g-0 justify-content-end"></div>
-
-                <div class="col-lg-5 offset-lg-7 col-12">
-                    <div class="d-flex justify-content-center footzone copyright">
-                        <!-- <img src="images/NASA-Logo-Med.png" alt="nav-logo links to homepage"> -->
-                        <p>&copy National Aeronautics and Space Administration 2023</p>
-                    </div>
-                </div>
-
-            </div> 
-
-        </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
-

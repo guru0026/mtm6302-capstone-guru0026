@@ -5,6 +5,29 @@ Name: Hari Gurusubramanian
 Student Number: 041048161
 Project Selected: "Astronomy Picture of the Day Search"
 
+*PART-4*
+
+COMPLETION REPORT:
+
+Resources used were:
+1. NASA's APOD API documentation section,
+2. Unsplash.com for default stock images which load on the website before a date is selected for accessing the API server.
+3. Audiowide and Jura fonts from google fonts
+
+Challenges faced:
+
+The biggest challenge was making the transition from a static HTML and CSS-dependent site to a dynamic one which used javascript. All dynamic elements which were loaded from NASA's API had to be restyled on javascript instead of on css. Targeting an element in order to style it required the entire breadth of knowledge gained in Web Dev III. This was especially tricky to treat images which were added and had to follow the pattern of the grid.
+
+Another challenge was accessing the data from the API itself. Using the API Key as an object which is inserted in the main url, and then using json format to convert the data received from the API so that it can be displayed on the website required a lot of reading up, trials, and many attempts.
+
+A minor challenge was in saving the data to the localstorage by stringifying it, and accessing it again on opening by parsing it.
+
+The overall process required a lot of back-and-forth between JS and HTML so that the website behaved like it should, then back-and-forth between JS and CSS so that it appeared like it should.
+
+This was a learning experience and I'm hoping that I can streamline the entire process so that less double-work, trial-and-error and repetition is required next time.
+
+*PART-3*
+
 The colour palette for this design consists of five main colours:
     #003E9B: Blue as derived from NASA's official logo. This serves as a secondary colour.
     #EF171D: Red as derived from NASA's official logo. This serves as an alternate secondary colour.

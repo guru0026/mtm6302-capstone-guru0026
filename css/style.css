@@ -6,52 +6,17 @@
     --quin: rgba(190, 190, 195, 0.25);
 }
 
-
 body {
     background-color: var(--prim);
+    text-align: center;
+    justify-content: center;
 }
 
-p, a {
-    font-family: 'Jura', sans-serif !important;
-    color: var(--tert) !important;
-}
 
-h1, h2 {
-    font-family: 'Audiowide', sans-serif;
-    color: var(--tert);
-}
-
-ul {
-    list-style-type: none;
-}
-
-footer ul, footer p {
-    font-size: 1rem;
-}
-
-footer i {
-    font-size: 3rem;
-}
-
-section {
-    margin: 5rem;
-}
-
-.navbar {
+nav {
     background-image: linear-gradient(to right, var(--quat), var(--prim));
     border-bottom: 0.1rem solid var(--tert);
 }
-
-
-footer {
-    background-image: linear-gradient(to left, var(--quat), var(--prim));
-    border-top: 0.1rem solid var(--tert);
-}
-
-footer ul {
-    padding-top: 2rem;
-}
-
 
 .nav-link {
     font-family: 'Audiowide', sans-serif;
@@ -59,7 +24,6 @@ footer ul {
     text-decoration: underline;
     font-weight: 700;
 }
-
 
 .navbar .active {
     background-color: var(--sec);
@@ -70,277 +34,181 @@ footer ul {
     border-radius: 2rem;
 }
 
-form {
-    padding: 0rem 1rem;
-    display: flex;
 
+.banner {
+    padding: 0px;
 }
 
-.form-control {
-    background-color: rgba(190, 190, 195, 0.05);
-    border-radius: 2rem !important;
-    border-color: var(--tert) !important;
-    border-width: .15rem;
-}
-
-form ::placeholder {
+p, a {
+    font-family: 'Jura', sans-serif !important;
     color: var(--tert) !important;
+}
+
+h1, h2, h3 {
     font-family: 'Audiowide', sans-serif;
-}
-
-input {
-    color: var(--tert) !important;
-}
-
-.fa-bars {
-    font-size: 2.5rem;
     color: var(--tert);
 }
 
-/* ======================================================CALENDAR=================================================================================== */
-
-.selector .card {
-    margin: .3rem;
-    border-width: .1rem;
-    border-radius: .7rem;
-    border-color: var(--quat);
-    background-color: var(--prim);
-    aspect-ratio: 1/1;
-    /* justify-content: center;
-    align-content: center;  */
+ul {
+    list-style-type: none;
 }
 
-.selector .card p {
-    color: var(--sec) !important;
-    font-size: 2.5rem;
+section {
+    margin: 5rem;
+}
+
+hr {
+    color: var(--tert);
+    height: 1rem !important;
+}
+
+.hearts-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+#randoms-container, #hearts-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem;
     margin: 0rem;
+    justify-content:start;
+    align-items:flex-start;
+    gap: 0rem;
 }
+
+footer ul, footer p {
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+footer i {
+    font-size: 3rem;
+}
+
+footer {
+    background-image: linear-gradient(to left, var(--quat), var(--prim));
+    border-top: 0.1rem solid var(--tert);
+}
+
+
+
+/* .banner img {
+    height: auto;
+    aspect-ratio: 100;
+} */
 
 main i, section i {
     color: var(--sec) !important;
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* margin: 0px 0px; */
 }
 
-
-.selector {
-    text-align: center;
-    font-weight: 700;
-
-}
-
-.container .calendar {
-    margin: -4rem 0rem -4rem 0rem;
-}
-/* ====================================================CALENDAR-END================================================================================= */
-
-.range {
-    display: inline-flex;
-    color: var(--sec);
-    font-family: 'Jura', sans-serif !important;
-    align-items: center;
+#calendar {
     justify-content: center;
-    font-size: 1.2rem;
-    margin-bottom: -2rem;
 }
 
-.slider {
-    justify-content: space-evenly;
+#date {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-image: linear-gradient(to left, var(--quat), var(--prim));
+    border-color: var(--tert);
+    border-radius: 3rem;
+    color: var(--sec);
+    font-size: 2.5rem;
+    font-family: 'Audiowide', sans-serif;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 0.15rem;
-    background: var(--quat);
+
+
+form label {
+    color: var(--tert);
+    font-size: 1.5rem;
+    font-family: 'Audiowide', sans-serif;
 }
 
-input[type=range] {
-    width: 100%;
+#submit {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 3rem;
+    font-family: 'Audiowide', sans-serif;
 }
 
-input[type=range]::-webkit-slider-thumb {
-border: 3px solid var(--sec);
-height: 1.5rem;
-width: 1.5rem;
-border-radius: 1rem;
-background: var(--prim);
-margin-top: -12px;
+
+button:hover {
+    background-color: var(--sec);
+    color: var(--quat);
 }
 
-/* ===============================================CAROUSEL SECTION======================================================= */
-
-.carousel-inner {
-    aspect-ratio: 5/2;
-    margin: auto;
-    vertical-align: middle;
+button i:hover {
+    color: var(--quat) !important;
 }
 
-.carousel-inner a {
-    margin: auto;
+.delete-button i {
+    padding: 0.2rem;
+    display: flex;
+    margin: 0rem;
+
 }
 
-#carslide1 {
-    content: url(../images/photos/iss066e023536.jpg);
+.delete-button {
+    width: auto;
 }
 
-#carslide2 {
-    content: url(../images/photos/nasa-7Cz6bWjdlDs-unsplash.jpg);
+button i {
+    padding: 0rem;
+    margin: 0rem;
 }
 
-#carslide3 {
-    content: url(../images/photos/nasa-8Hjx3GNZYeA-unsplash.jpg);
-}
-
-#carslide4 {
-    content: url(../images/photos/nasa-CpHNKNRwXps-unsplash.jpg);
-}
-
-#carslide5 {
-    content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
-}
-
-.carousel-item p  {
-    color: yellow !important;
-    font-size: 3rem !important;
-    z-index: 9 !important;
-    margin-bottom: 10rem !important;
-}
-
-/* =================================================CAROUSEL-END========================================================= */
-
-#space-walk {
-    content: url(../images/photos/nasa-gYwfpVI2JzM-unsplash.jpg);
+button {
+    color: var(--sec);
+    background-color: var(--prim);
+    border-radius: .5rem;
+    border-color: var(--sec);
 }
 
 .card {
-    margin: .1rem;
+    margin: 0rem;
     border-width: .1rem;
     border-radius: 1rem;
     border-color: var(--tert);
     justify-content: center;
-}
-
-.main-text {
+    overflow: hidden;
     background-color: var(--prim);
-    border-color: var(--prim);
-    font-size: 1.2rem;
+    /* object-fit: cover; */
 }
 
-.main-text a {
-    color: var(--sec) !important;
-}
-
-.main-text i {
-    border: 0.1rem solid var(--sec);
-    border-radius: .7rem;
-    padding: .5rem;
-    margin: .2rem;
-}
-
-.caption-links {
-    justify-content: space-between;
-}
-
-.card-text {
-    text-decoration: none !important;
-}
-
-/* div .thumb {
-    aspect-ratio: 1/1;
-    
-} */
-
-.card div {
-    border-radius: .9rem;
-    align-content: center;
-}
-
-#a {
-    content: url(../images/photos/nasa-OLlj17tUZnU-unsplash.jpg);
-}
-
-#b {
-    content: url(../images/photos/nasa-JHyiw_dpALk-unsplash.jpg);
-}
-
-#c {
-    content: url(../images/photos/nasa-CpHNKNRwXps-unsplash.jpg);
-}
-
-#d {
-    content: url(../images/photos/nasa-jlV2k_Fx0fc-unsplash.jpg);
-}
-
-#e {
-    content: url(../images/photos/nasa-rTZW4f02zY8-unsplash.jpg);
-}
-
-#f {
-    content: url(../images/photos/eric-tompkins-JsWBc--sf2o-unsplash.jpg);
-}
-
-#g {
-    content: url(../images/photos/nasa-7Cz6bWjdlDs-unsplash.jpg);
-}
-
-#h {
-    content: url(../images/photos/nasa-8Hjx3GNZYeA-unsplash.jpg);
-}
-
-#i {
-    content: url(../images/photos/nasa-cIX5TlQ_FgM-unsplash.jpg);
-}
-
-#j {
-    content: url(../images/photos/nasa-n463SoeSiVY-unsplash.jpg);
-}
-
-#k {
-    content: url(../images/photos/nasa-NuE8Nu3otjo-unsplash.jpg);
-}
-
-#l {
-    content: url(../images/photos/nasa-Q1p7bh3SHj8-unsplash.jpg);
-}
-
-#m {
-    content: url(../images/photos/nasa-UPyf9vu0FiI-unsplash.jpg);
-}
-
-#n {
-    content: url(../images/photos/nasa-V4ZksNimxLk-unsplash.jpg);
-}
-
-#o {
-    content: url(../images/photos/nasa-wAkLQnT2TC0-unsplash.jpg);
-}
-
-#p {
-    content: url(../images/photos/nasa-xFO2Xt33xgI-unsplash.jpg);
-}
-
-#q{
-    content: url(../images/photos/nasa-Yj1M5riCKk4-unsplash-2.jpg);
-}
-
-#r{
-    content: url(../images/photos/nasa-Zzc0vZE2JZI-unsplash.jpg);
+.card:hover, button:hover {
+    box-shadow: 0rem 2rem 4rem var(--quat);
 }
 
 
+.card-body {
+    background-image: linear-gradient(to left, var(--quat), var(--prim));
+}
 
-
-
+a img{
+    margin: 0rem;
+}
 
 @media (max-width: 575px) {
     .container {
         width: auto;
-        padding: 0;
+        padding: 2rem;
         margin: auto;
-        margin-left: -2rem;
-        margin-right: -2rem;
+        /* margin-left: -2rem; */
+        /* margin-right: -2rem; */
         /* justify-content: center; */
       /* margin: auto -2rem 0rem -2rem 0rem; */
+    }
+
+    #date {
+        width: 85vw !important;
+        font-size: 2rem;
     }
 
     body {
